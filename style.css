@@ -1,0 +1,141 @@
+/* Portfolio css */
+
+@import url('https://fonts.googleapis.com/css2?family=Urbanist&display=swap');
+
+*{
+    font-family: 'Urbanist', sans-serif;
+}
+
+/* Mobile */
+
+h1{
+    font-size:20px; color:#fff; text-align: center;
+}
+
+h2{
+    font-size:18px; color:#fff;
+}
+
+h3{
+    font-size:16px; color:#fff;
+}
+
+p{
+    font-size:14px; color:#fff;
+}
+
+li{
+    font-size: 14px; color:#fff;
+}
+
+nav{
+    font-size: 15px; color:#fff; text-align: right;
+}
+
+body {
+    background-color:#000000;
+}
+
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    height: auto;
+}
+
+
+/* Navigation links */
+a{
+    color:orange; text-decoration: none;
+}
+
+a:hover{
+    color: gray;
+}
+
+section{
+    display: flex;
+}
+
+/* Laptop etc */
+
+@media (min-width:480px){
+    h1{
+        font-size:46px; color:#000; font-weight: bold; text-align: center;
+    }
+
+    h2{
+        font-size:44px; color:#000; font-weight: bold;
+    }
+
+    h3{
+        font-size:30px; color:black; font-weight: bold;
+    }
+
+    p{
+        font-size:22px; color:#000;
+    }
+
+    li{
+        font-size: 22px; color:black;
+    }
+
+    nav{
+        font-size:20px; color:black; text-align: right;
+    }
+
+    body{
+        background-color:#fff;
+    }
+
+    img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* Contact button */
+    .button {
+        display: flex;
+        border-radius: 12px;
+        /*background-color: orange;*/
+        border: none;
+        /*color:white;*/
+        padding: 5px 32px;
+        text-align: center;
+        /*text-decoration: none;*/
+        font-size: 20px;
+        margin: auto;
+        cursor: pointer;
+        justify-content: center;
+        transition-duration: 0.4s;
+    }
+
+    .button1 {
+        background-color:white;
+        color:black;
+        border: 2px solid black;
+        align-items: center;
+    }
+
+    .button1:hover {
+        background-color:black;
+        color:white;
+    }
+
+
+    /* Navigation links */
+    a{
+        color:orange; text-decoration: underline;
+    }
+
+    a:hover{
+        color: gray;
+    }
+
+    section{
+        display: grid;
+    }
+
+}
