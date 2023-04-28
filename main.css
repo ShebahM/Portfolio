@@ -1,0 +1,472 @@
+/* Portfolio css */
+
+@import url('https://fonts.googleapis.com/css2?family=Urbanist&display=swap');
+
+
+*{
+    font-family: 'Urbanist', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Mobile */
+body {
+    background: rgb(255,165,0);
+    background: linear-gradient(0deg, rgba(255,165,0,1) 0%, rgba(255,255,255,1) 83%);
+}
+
+div {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    font-size:22px; color:orange; text-align: center; font-weight:bold;
+}
+
+h2{
+    font-size:18px; color:black; font-weight:bold;
+}
+
+h3{
+    font-size:16px; color: black; font-weight:bold;
+}
+
+p{
+    font-size:14px; color:black;
+}
+
+.projects li, .future-projects li {
+    font-size: 14px; color:#fff;
+}
+
+/* Links for future projects */
+.moreinfo {
+    color: black;
+}
+
+.moreinfo1 {
+    color:black;
+}
+
+#profile-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    height: auto;
+    border-radius: 50%;
+}
+
+/* Header navigation links */
+header {
+    /* padding: 10px; */
+}
+
+header nav {
+    width: 100%;
+    text-align: right;
+    margin-top: 0px;
+    padding-left: 0px;
+    font-size: 15px;
+}
+
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+}
+
+.menu li {
+    list-style: none;
+    display: inline-block;
+    font-size: 30px;
+}
+
+header nav a {
+    color: orange;
+    text-decoration: none;
+}
+
+header nav a:hover {
+    color:gray;
+}
+
+/* Timeline */
+.container h2 {
+    text-align: center;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+.timeline {
+    counter-reset: year 2011;
+    position: relative;
+    padding-inline-start: 0px;
+    padding-inline-end: 0px;
+  }
+  
+.timeline li {
+    list-style: none;
+    border-top: 2px dashed;
+    border-color: white !important;
+    margin:0; padding: 30px;
+    counter-increment: year;
+    position: relative;
+    text-align: center;
+}
+  
+.timeline li:nth-child(even):before {
+    content: counter(year);
+    right: 100%; 
+    margin-right: -20px;
+    position: absolute;
+    border-radius: 50%;
+    padding: 10px;
+    height: 20px;
+    width: 30px;
+    background-color: white;
+    text-align:center;
+    color: orange;
+    font-size: 100%;
+    padding-left: 10px;
+}
+  
+.timeline li:nth-child(odd):before {
+    content: counter(year);
+    left: 100%; 
+    margin-left: -20px;
+    position: absolute;
+    border-radius: 50%;
+    padding: 10px;
+    height: 20px;
+    width: 30px;
+    background-color:white;
+    text-align:center;
+    color: orange;
+    font-size: 100%;
+    padding-left: 10px;
+}
+  
+.timeline li:nth-child(even) {
+    border-left: 2px dashed;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    margin-right: 30px; 
+    padding-right: 0;
+}
+  
+.timeline li:nth-child(odd) {
+    border-right: 2px dashed;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    margin-left: 30px; 
+    padding-left: 0;
+}
+  
+.timeline li:first-child {
+    border-top: 0;
+    border-top-right-radius:0;
+    border-top-left-radius:0;
+}
+  
+.timeline li:last-child {
+    border-bottom-right-radius:0;
+    border-bottom-left-radius:0;
+}
+
+/* Contact button */
+button {
+    display: flex;
+    border-radius: 12px;
+    padding: 5px 32px;
+    text-align: center;
+    font-size: 20px;
+    margin: auto;
+    cursor: pointer;
+    justify-content: center;
+    transition-duration: 0.4s;
+    background-color:white;
+    color:black;
+    align-items: center;
+}
+
+button:hover {
+    background-color:black;
+    color:white;
+}
+
+button a {
+    text-decoration: none;
+    color: orange;
+}
+
+/* Footer Socials */
+footer {
+    padding-bottom: 20px;
+   }
+  
+footer ul {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    padding-left: 0px;
+}
+  
+footer li {
+    display: inline-block;
+    margin: 4px;
+}
+  
+footer li a {
+    display: block;
+    text-decoration: none;
+    border-bottom: medium none;
+    padding: 10px;
+    border-radius: 3px;
+    transition: all 0.3s ease-in 0s, all 1s ease 0s;
+    background:white;
+}
+  
+footer .facebook:hover {
+    background-color:#365397;
+}
+footer .instagram:hover {
+    background-color:#396d9a;
+}
+footer .linkedin:hover {
+    background-color:#006db3;
+}
+footer .github:hover {
+    background-color:#2f2f2f;
+}
+
+/* Laptop etc */
+
+@media (min-width:480px){
+    body {
+        background: rgb(255,165,0);
+        background: linear-gradient(0deg, rgba(255,165,0,1) 0%, rgba(255,255,255,1) 75%);   
+    }
+
+    div {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+
+    h1{
+        font-size:46px; color:black; font-weight: bold; text-align: center;
+    }
+
+    h2{
+        font-size:44px; color:black; font-weight: bold;
+    }
+
+    h3{
+        font-size:30px; color:black; font-weight: bold;
+    }
+
+    p{
+        font-size:30px; color:#000;
+    }
+
+    .projects li, .future-projects li {
+        font-size: 30px; color:#fff;
+    }
+    
+    /* Links for future projects */
+    .moreinfo {
+        color: black;
+    }
+    
+    .moreinfo1 {
+        color:black;
+    }
+
+    #profile-img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 35%;
+        height: auto;
+        border-radius: 50%;
+    }
+
+    /* Header navigation links */
+    header {
+        /* padding: 10px;
+        margin: 20px; */
+    }
+
+    header nav {
+        width: 100%;
+        text-align:right;
+        margin-top: 10px;
+        padding-left: 0px;
+        font-size:30px;
+    }
+
+    .menu {
+        display: flex;
+        align-items: right;
+        justify-content: flex-end;
+        gap: 40px;
+    }
+    
+    .menu li {
+        list-style: none;
+        display: inline-block;
+    }
+
+    /* Timeline */
+    .container {
+        width: 100%;
+        margin: auto;
+    }
+    .timeline {
+        counter-reset: year 2011;
+        position: relative;
+        padding-inline-start: 0px;
+        padding-inline-end: 0px;
+      }
+      
+      .timeline li {
+        list-style: none;
+        border-top: 2px dashed;
+        border-color: white !important;
+        margin:0; padding: 30px;
+        counter-increment: year;
+        position: relative;
+        text-align: center;
+      }
+      
+      .timeline li:nth-child(even):before {
+        content: counter(year);
+        right: 100%; 
+        margin-right: -25px;
+        position: absolute;
+        border-radius: 50%;
+        height: 20px;
+        width: 20px;
+        background-color: white;
+        text-align:center;
+        color: orange;
+        font-size: 100%;
+        padding-right: 25px;
+      }
+      
+      .timeline li:nth-child(odd):before {
+        content: counter(year);
+        left: 100%; 
+        margin-left: -25px;
+        position: absolute;
+        border-radius: 50%;
+        height: 20px;
+        width: 20px;
+        background-color:white;
+        text-align:center;
+        color: orange;
+        font-size: 100%;
+        padding-right: 25px;
+      }
+      
+      .timeline li:nth-child(even) {
+        border-left: 2px dashed;
+        border-top-left-radius: 30px;
+        border-bottom-left-radius: 30px;
+        margin-right: 30px; 
+        padding-right: 0;
+      }
+      
+      .timeline li:nth-child(odd) {
+        border-right: 2px dashed;
+        border-top-right-radius: 30px;
+        border-bottom-right-radius: 30px;
+        margin-left: 30px; 
+        padding-left: 0;
+      }
+      
+      .timeline li:first-child {
+        border-top: 0;
+        border-top-right-radius:0;
+        border-top-left-radius:0;
+      }
+      
+      .timeline li:last-child {
+        border-bottom-right-radius:0;
+        border-bottom-left-radius:0;
+      }
+
+    /* Contact button */
+    button {
+        display: flex;
+        border-radius: 12px;
+        border: thin;
+        padding: 5px 32px;
+        text-align: center;
+        font-size: 30px;
+        margin: auto;
+        cursor: pointer;
+        justify-content: center;
+        align-content: center;
+        transition-duration: 0.4s;
+        background-color:white;
+        color:black;
+        align-items: center;
+    }
+
+    .button:hover {
+        background-color:black;
+        color:white;
+    }
+
+    button a {
+        text-decoration: none;
+        color:orange;
+    }
+    
+    /* Footer Socials */
+    footer {
+        padding-bottom: 30px;
+       }
+      
+    footer ul {
+        width: 100%;
+        text-align: center;
+        margin-top: 30px;
+        padding-left: 0px;
+    }
+      
+    footer li {
+        display: inline-block;
+        margin: 10px;
+    }
+      
+    footer li a {
+        display: block;
+        text-decoration: none;
+        border-bottom: medium none;
+        padding: 10px;
+        border-radius: 3px;
+        transition: all 0.3s ease-in 0s, all 1s ease 0s;
+        background:white;
+    }
+      
+    footer .facebook:hover {
+        background-color:orange;
+    }
+    footer .instagram:hover {
+        background-color: orange;
+    }
+    footer .linkedin:hover {
+        background-color: orange;
+    }
+    footer .github:hover {
+        background-color: orange;
+    }
+}

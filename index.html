@@ -7,7 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="author" content="Shebah Mimano">
         <title>Shebah Mimano - Developer Portfolio</title>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="main.css">
         <link rel="apple-touch-favicon" sizes="180x180" href="media/apple-touch-favicon.ico">
         <link rel="favicon" type="icon" sizes="32x32" href="media/favicon-32x32.ico">
         <link rel="icon" type="icon" sizes="16x16" href="media/favicon.ico">
@@ -29,13 +29,13 @@
         </header>
     
         <main>
-        <section class="home">
+        <section id="home">
             <h1>Shebah Mimano</h1>
-            <img class="profile-img" src="media/Shebah.png" alt="Shebah's picture" width="300" height="300">
+            <img id="profile-img" src="media/Shebah.png" alt="Shebah's picture" width="300" height="300">
             <p style="text-align:center;">Welcome to my developer portfolio.</p>
         </section>
 
-        <section class="about-me">
+        <section id="about-me">
             <h2>About Me</h2>
             <p>I am a Aerospace graduate with an interest in coding. I run my catering business called <a href="https//www.inyamat.co.uk">Inyamat</a>.<br>
                 I am a single mother to a beautiful 6 year old.
@@ -44,7 +44,7 @@
             <p>My career plan is to develop skills that would enable me to start and develop a career as a full stacks developer.</p>
         </section>
 
-        <section class="container">
+        <div class="container">
             <h2>Timeline</h2>
             <ul class="timeline">
                 <li>Started my BEng Aeronautical engineering degree at The University of South Wales</li>
@@ -58,26 +58,26 @@
                 <li>Finished my MSc in Aerospace engineering <br> Wrote a children's book - The Scared Spider</li>
                 <li>Joined the Black-codher bootcamp!</li>
             </ul>
-        </section>
+        </div>
 
-        <section class="projects">
+        <section class="projects" id="projects">
             <h2>Projects</h2>
             <ul>
-                <li><a href="https://github.com/black-codher-bootcamp-2021-jackson/javascript-assessment-jackson-group-i">JavaScript group project</a></li>
+                <li><a target="_blank" href="https://cupcakemania.netlify.app/">JavaScript group project</a></li>
                 <li>React project</li>
                 <li>Node project</li>
                 <li>MongoDB project</li>
                 <li>Personal project</li>
             </ul>
             <h3>Future Projects</h3>
-            <ul>
-                <li>Diabetes data logger that would enable pateients to upload their blood sugar and blood pressure data, and make it accessible to healthcare professionals, to enable them to make more tailored prescriptions.</li><a href="#moreinfo1">(more info)</a>
-                <li>Application to help find the perfect afro hair products for your hair type</li><a href="moreinfo2">(more info)</a>
+            <ul class="future-projects">
+                <li>Diabetes data logger that would enable pateients to upload their blood sugar and blood pressure data, and make it accessible to healthcare professionals, to enable them to make more tailored prescriptions.</li><a class="moreinfo" href="#moreinfo">(more info)</a>
+                <li>Application to help find the perfect afro hair products for your hair type</li><a class="moreinfo1" href="moreinfo1">(more info)</a>
             </ul>
         </section>
         <br><br>
 
-        <button class="button button1">
+        <button id="contact" class="button">
              <p><b><a href="mailto:shebah.mimano@gmail.com" target="_blank">Contact Me</a></b></p>
         </button>
         </main>

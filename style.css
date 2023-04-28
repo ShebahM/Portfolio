@@ -286,38 +286,6 @@ footer .github:hover {
         border-radius: 50%;
     }
 
-    .timeline li:nth-child(even):before {
-        content: counter(year);
-        right: 100%;
-        margin-right: -20px;
-        margin-top: -5px;
-        position: absolute;
-        border-radius: 50%;
-        padding: 5px 5px 5px 5px;
-        height: 20px;
-        width: auto;
-        background-color:white;
-        text-align:center;
-        color: orange;
-        font-size: 100%;
-    }
-      
-    .timeline li:nth-child(odd):before {
-        content: counter(year);
-        left: 100%;
-        margin-left: -20px;
-        margin-top: -10px;
-        position: absolute;
-        border-radius: 50%;
-        padding: 5px 5px 5px 5px;
-        height: 20px;
-        width: auto;
-        background-color:white;
-        text-align:center;
-        color: orange;
-        font-size: 100%;
-    }
-
     /* Header navigation links */
     header {
         padding: 0px 5px;
